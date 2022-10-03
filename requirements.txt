@@ -1,0 +1,9 @@
+torch
+omegaconf
+fairseq
+librosa
+torchaudio
+matplotlib
+fastprogress
+pandas
+
