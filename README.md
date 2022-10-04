@@ -2,12 +2,12 @@
 
 This is the official code repo for the paper:
 
-<center>GAN YOU HEAR ME?</center> 
-<center>RECLAIMING UNCONDITIONAL SPEECH SYNTHESIS FROM DIFFUSION MODELS</center>
+**GAN YOU HEAR ME? RECLAIMING UNCONDITIONAL SPEECH SYNTHESIS FROM DIFFUSION MODELS**
+
 
 Links:
 - arxiv: TBD
-- audio sample demo page: TBD
+- audio sample demo page: [https://rf5.github.io/slt2022-asgan-demo/](https://rf5.github.io/slt2022-asgan-demo/)
 - SLT proceedings: upcoming
 - quickstart: see below
 
@@ -58,7 +58,7 @@ To prepare the data, use the HuBERT extractor provided in the `hubconf.py`.
 Put simply:
 
 1. Download the [Google Speech Commands dataset](https://ai.googleblog.com/2017/08/launching-speech-commands-dataset.html)
-2. Extract the HuBERT features for each waveform and save them to some caching directory:
+2. Extract the HuBERT `base` layer 6 features for each waveform and save them to some caching directory:
 
     ```python
       import torch
