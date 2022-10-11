@@ -15,6 +15,12 @@ Links:
 
 ## Quickstart
 
+<p align="center">
+    <a target="_blank" href="https://colab.research.google.com/github/RF5/simple-asgan/blob/master/asgan_quickstart_colab.ipynb">
+        <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+    </a>
+</p>
+
 You can load the checkpoint of the best model from the paper (HuBERT variant of ASGAN) using torch hub, so no need to clone the repo!
 Simply ensure that all libraries in `requirements.txt` are installed, and then:
 
