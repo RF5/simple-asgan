@@ -79,7 +79,11 @@ def asgan_hubert_sc09_6(pretrianed=True, progress=True, device='cuda'):
     """ Density GAN which generates mel-spectrograms from standard normal vectors and then 
     uses hifigan to vocode them back to the time domain.
     """
-    
+    if torch.cuda.is_available() == False:
+        if str(device) != 'cpu':
+            logging.warning(f"Overriding device {device} to cpu since no GPU is available.")
+            device = 'cpu'
+
     ckpt = torch.hub.load_state_dict_from_url(
         "https://github.com/RF5/simple-asgan/releases/download/v0/asgan_hubert_ckpt_00520000_slim.pt",
         map_location=device,
@@ -91,7 +95,7 @@ def asgan_hubert_sc09_6(pretrianed=True, progress=True, device='cuda'):
     if cfg.data_type == 'melspec':
         hifigan = torch.hub.load("bshall/hifigan:main", "hifigan", map_location='cpu').cpu().eval()
     else:
-        hifigan = hubert_hifigan(include_hubert=False, device='cpu')
+        hifigan = hubert_hifigan(progress=progress, pretrained=pretrianed, device='cpu')
     print(f"HiFiGAN loaded with {sum([p.numel() for p in hifigan.parameters()]):,d} parameters.")
 
     g = RP_W(cfg.rp_w_cfg).cpu().eval()
