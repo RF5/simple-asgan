@@ -8,7 +8,7 @@ This is the official code repo for the paper:
 Links:
 - arxiv: TBD
 - audio sample demo page: [https://rf5.github.io/slt2022-asgan-demo/](https://rf5.github.io/slt2022-asgan-demo/)
-- SLT proceedings: upcoming
+- SLT 2022 proceedings: upcoming
 - quickstart: see below
 
 ---
@@ -85,6 +85,26 @@ python train_asgan.py model=rp_w train_root=/path/to/hubert_feature_cache/ n_val
 
 Logs will be saved in the checkpoint path. Feel free to tune the training hyperparameters as you see fit.
 
+### Repository structure:
+
+The repository is organized as follows: 
+
+```
+├── density
+│   ├── augment.py                  # ADA and update skipping
+│   ├── config.py                   # hyperparameters
+│   ├── dataset.py                  # data loading and processing
+│   ├── __init__.py
+│   ├── losses.py                   # training loss
+│   ├── metrics.py                  # logging and evaluation metrics
+│   └── models.py                   # model definition
+├── hubconf.py                      # torchhub integration
+├── hubert_feature_reader.py        # fairseq hubert feature extractor
+├── README.md
+├── requirements.txt
+├── split_data.py                   # splits data into train/valid/test subsets
+└── train_asgan.py                  # main training script
+```
 
 ## Acknowledgements
 
