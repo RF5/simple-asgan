@@ -106,8 +106,8 @@ def asgan_hubert_sc09_6(pretrianed=True, progress=True, device='cuda'):
     model = model.to(device).eval()
     return model
 
-def hubert_hifigan(pretrained=True, progress=True, device='cuda'):
-    """ HiFiGAN which works on HuBERT embeddings. Optionally `include_hubert` model as a .hubert attribute. """
+def hubert_hifigan(pretrained=True, progress=True, device='cuda', model_dir=None):
+    """ HiFiGAN which works on HuBERT embeddings. Optionally specify `model_dir` as location of hubert checkpoint. """
     if not pretrained: raise NotImplementedError("Only pretrained model supported.")
 
     if model_dir is None:
