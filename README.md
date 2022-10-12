@@ -6,7 +6,7 @@ This is the official code repo for the paper:
 
 
 Links:
-- arxiv: TBD
+- arxiv: [https://arxiv.org/abs/2210.05271](https://arxiv.org/abs/2210.05271)
 - audio sample demo page: [https://rf5.github.io/slt2022-asgan-demo/](https://rf5.github.io/slt2022-asgan-demo/)
 - SLT 2022 proceedings: upcoming
 - quickstart: see below
@@ -120,3 +120,18 @@ Parts of code for this project are adapted from the following repositories -- pl
 - https://github.com/jik876/hifi-gan
 - https://github.com/bshall/hifigan
 - https://github.com/NVlabs/stylegan3
+
+## Citation
+
+Will be updated after SLT proceedings is published. 
+
+<!-- For the SLT proceedings: -->
+
+<!-- ```bibtex
+@inproceedings{baas2022asgan,
+  title={{GAN} you hear me? Reclaiming unconditional speech synthesis from diffusion models},
+  author={Baas, Matthew and Kamper, Herman},
+  booktitle={IEEE SLT},
+  year=2022
+}
+``` -->
