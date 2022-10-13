@@ -4,12 +4,15 @@ This is the official code repo for the paper:
 
 **GAN YOU HEAR ME? RECLAIMING UNCONDITIONAL SPEECH SYNTHESIS FROM DIFFUSION MODELS**
 
-
 Links:
 - arxiv: [https://arxiv.org/abs/2210.05271](https://arxiv.org/abs/2210.05271)
 - audio sample demo page: [https://rf5.github.io/slt2022-asgan-demo/](https://rf5.github.io/slt2022-asgan-demo/)
 - SLT 2022 proceedings: upcoming
 - quickstart: see below
+
+![ASGAN architecture](./asgan-diagram.png)
+
+Figure: the architecture of the mel-spectrogram variant of ASGAN, as given in the paper.
 
 ---
 
