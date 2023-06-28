@@ -1,11 +1,13 @@
 # AudioStyleGAN - ASGAN
 
-This is the official code repo for the paper:
+UPDATE June 2023: An extension of this work has also been submitted to IEEE TASLP
+
+This is the official code repo for ASGAN, which goes together with the conference paper:
 
 **GAN YOU HEAR ME? RECLAIMING UNCONDITIONAL SPEECH SYNTHESIS FROM DIFFUSION MODELS**
 
 Links:
-- arxiv: [https://arxiv.org/abs/2210.05271](https://arxiv.org/abs/2210.05271)
+- conference paper arxiv: [https://arxiv.org/abs/2210.05271](https://arxiv.org/abs/2210.05271)
 - audio sample demo page: [https://rf5.github.io/slt2022-asgan-demo/](https://rf5.github.io/slt2022-asgan-demo/)
 - SLT 2022 proceedings: https://ieeexplore.ieee.org/document/10023153
 - quickstart: see below
