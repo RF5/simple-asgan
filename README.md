@@ -81,6 +81,8 @@ Put simply:
       feats = hubert.get_feats_batched(wav) # (bs, seq_len, dim)
       torch.save(feats, '/path/to/hubert_feature_cache/uttr_hubert_feats.pt')
     ```
+
+    Note: if you are using this to preprocess data for training ASGAN, then you should save each utterance's feature tensor as `(seq_len, dim)`. So make sure to squeeze out the first singleton dimension before saving it.
   
 3. Use the train, test, and validation splits specified by the google speech commands dataset. I also provide a script to construct this for the SC09 dataset with `split_data.py`: `python --root_path /path/to/sc09/ --sc09_only True` . This will save train, validation, and test `.csv` files to `splits/`.
 
