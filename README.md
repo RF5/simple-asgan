@@ -98,6 +98,8 @@ python train_asgan.py model=rp_w train_root=/path/to/hubert_feature_cache/ n_val
 
 Logs will be saved in the checkpoint path. Feel free to tune the training hyperparameters as you see fit.
 
+**NOTE**: the validation set metrics computed in the training script are quick approximations of the final metrics used in the paper. E.g. FID is computed using HuBERT features on the validation set in the training script, instead of the ResNeXT classifier. This is done to save time and not perform ResNeXT inference on the full validation set output every validation cycle. To obtain the full test set metrics, an evaluation script should be used that follows the method specified in the paper, instead of the approximations made in the training script.
+
 ### Repository structure:
 
 The repository is organized as follows: 
