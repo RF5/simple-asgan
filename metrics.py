@@ -95,8 +95,8 @@ def ndb_score(feat_data: Tensor, feat_gen: Tensor, K=50, proportion=True, precom
 
 def modified_inception_score2(probs_gen, n=10000):
     """
-    Calculate modified inception score from `logprobs_gen` (bs, n_classes) of 
-    log probabilities.
+    Calculate modified inception score from `probs_gen` (bs, n_classes) of 
+    probabilities.
 
     Adapted from https://github.com/HazyResearch/state-spaces/
     """
